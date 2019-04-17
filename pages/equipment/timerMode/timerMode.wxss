@@ -1,0 +1,56 @@
+/* pages/equipment/timerMode/timerMode.wxss */
+
+.cell-class {
+  display: block;
+  width: 100%;
+  margin-bottom: 4rpx;
+  background: #ffffff
+}
+
+.timerMode {
+  padding-top: 10rpx;
+}
+
+.timerMode .slider-wrapper {
+  width: 100%;
+  padding: 26rpx 40rpx;
+  display: flex;
+  height: 150rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timerMode .slider-wrapper .mode-content {
+  overflow: hidden;
+}
+
+.slider-wrapper .mode-content .title {
+  font-size: 38rpx;
+  color: #333;
+}
+
+.slider-wrapper .mode-content .startTi{
+  margin-right: 40rpx
+}
+
+.slider-wrapper .mode-content .timewrap .time {
+  font-size: 28rpx;
+  color: #f46748;
+  margin-right: 24rpx
+}
+
+.slider-wrapper .mode-content .timewrap .weekend {
+  font-size: 24rpx;
+  /* color: #bdbdbd; */
+}
+
+.addTimeModeBtn{
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  bottom: 0;
+  left: 0
+}
+.addTimeModeBtn button{
+  border-radius: 0
+}

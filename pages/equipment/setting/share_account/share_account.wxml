@@ -1,0 +1,48 @@
+<view class='share_wrapper'>
+  <view class='share_top'>
+    <image src='../../../../images/Adddevice_img_shareit.png' mode='widthFix'></image>
+  </view>
+  <view class='share_form'>
+    <view class="section">
+      <input value="{{shareValue}}" placeholder="请输入分享的用户ID" type='number' bindinput='shareValue'/>
+    </view>
+    <view class='share_btn' bindtap='pushShare'>
+      分享
+    </view>
+    <view class='share_content'>
+      <view>
+        1、您可以将设备的控制权分享给您的家人或朋友，被分享的人就可以控制此设备
+      </view>
+      <view>
+        2、用户ID号查询在“个人资料”里面
+      </view>
+    </view>
+  </view>
+</view>
+<view class='share_user_wrapper'>
+  <view class='title'>
+    已绑定设备成员
+  </view>
+  <view class='user_List'>
+    <view class='user_cell' wx:for="{{userList}}" wx:key="{{index}}">
+      <view class='phone'>{{item.uid}}</view>
+      <view class='admin_icon' wx:if="{{index == 0}}">
+        <image src='../../../../images/shareit_label_administrator.png' mode='widthFix'></image>
+      </view>
+      <view class='removeIcon icon_wrap' wx:else data-uid="{{item.uid}}" bindtap='deleteUserConfirm'>
+        <image src='../../../../images/shareit_icon_delete.png' mode='widthFix'></image>
+      </view>
+    </view>
+    <!-- <block wx:if="{{adminUid == item.uid}}">
+       <view wx:for="{{userList}}" wx:if="{{adminUid !== item.uid}}" class='user_cell'>
+        <view class='phone'>{{item.uid}}</view>
+        <view wx:if="{{index == 0}}" class='admin_icon'>
+          <image src='../../../../images/shareit_label_administrator.png' mode='widthFix'></image>
+        </view>
+        <view class='removeIcon icon_wrap' data-uid="{{item.uid}}" bindtap='deleteUserConfirm'>
+          <image src='../../../../images/shareit_icon_delete.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </block> -->
+  </view>
+</view>

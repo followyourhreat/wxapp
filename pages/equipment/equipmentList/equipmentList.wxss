@@ -1,0 +1,68 @@
+
+.slide-image{
+  width: 100%;
+  height: 375rpx;
+}
+.swiper_indica{
+  height: 375rpx
+}
+/**index.wxss**/
+.cell-class{
+  display: block;
+  width: 100%;
+  margin-bottom: 2rpx;
+}
+
+.slider-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 29rpx;
+  align-items: center;
+  box-sizing: border-box
+}
+.slider-icon{
+  width: 98rpx;
+  height: 98rpx;
+}
+
+.slider-icon image{
+  width: 98rpx;
+  height: 98rpx
+}
+
+.slider-content{
+  width: 470rpx;
+  height: 88rpx;
+  margin-left: 22rpx;
+  /* background: red; */
+}
+.slider-content .topText{
+  overflow: hidden;
+  margin-bottom: 18rpx
+}
+.slider-content .topText .titles{
+   font-size: 34rpx;
+   height: 34rpx;
+   line-height: 34rpx;
+   /* background: #ffffff; */
+   float: left
+}
+
+.slider-content .topText .stateIcon_b{
+  width: 73rpx;
+  height: 38rpx;
+  margin-left: 10rpx;
+  float: left
+}
+
+.slider-content .bottomText{
+     font-size: 24rpx;
+     line-height: 24rpx;
+     color: #BDBDBD
+}
+
+.slider-wrapper .body-view{
+  flex: 1;
+  text-align: right
+}

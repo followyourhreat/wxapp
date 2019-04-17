@@ -1,0 +1,80 @@
+/* pages/equipment/addTimer/addTimer.wxss */
+
+.addTimeBtn {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+}
+
+.timePickerWrap {
+  margin-top: 10rpx;
+  padding-top: 20rpx
+}
+
+.addTimeBtn button {
+  border-radius: 0;
+}
+
+.week_wrap {
+  padding: 29rpx 0;
+}
+
+.week_wrap .week_title {
+  font-size: 34rpx;
+  color: #333;
+  margin-left: 44rpx
+}
+
+.week_wrap .week_check{
+  width: 100%;
+  padding: 0 22rpx;
+  height: 82rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24rpx
+}
+.week_wrap .week_check .item{
+  height: 82rpx;
+  width: 82rpx;
+  line-height: 82rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333333;
+  background: #ECECEC;
+  border-radius: 17rpx;
+}
+
+.week_wrap .week_check .item.active{
+  color: #ffffff;
+  background:#C81D01;
+}
+.timeTitle{
+  margin-left:40rpx;
+}
+.switch_timer{
+ /* padding: 38rpx 0; */
+ height: 120rpx;
+ display: flex;
+ align-items: center
+ }
+.switch_timer .timeBtn{
+  flex: 1;
+  height: 120rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 120rpx
+}
+.switch_timer .timeBtn.active{
+  color: #C81D01;
+}
+.switch_timer .timeBtn image{
+  width: 28rpx;
+  /* height: 29rpx */
+}
+.switch_timer .xian{
+  width: 2rpx;
+  height:66rpx;
+  background: #F6F7F7;
+}

@@ -1,0 +1,100 @@
+<view>
+  <view class='headerWrap'>
+    <image src='../../../images/control_bg.png' class='header_bg' mode="widthFix"></image>
+    <view class='wrap'>
+      <view class='weather-wrap'>
+        <view class='weather'>
+          <image src='{{equipmentData.weather_img}}' class='weatherIcon' mode="widthFix"></image>
+          <text class='h3'>{{equipmentData.c}}</text>
+          <text class='xianIcon'></text>
+          <text class='h4'>{{equipmentData.city}}</text>
+        </view>
+
+        <view class='state-wrap'>
+          <image src='{{stateIcon}}' mode="widthFix"></image>
+          <text class='h4'>{{heating?'加热中':'加热关闭'}}</text>
+        </view>
+      </view>
+
+      <view class='temperature-wrap'>
+        <view class='number'>
+          <!-- <view class='num'>{{!checkState ? '_':equipmentData.temperature}}</view><view class='danwei'>℃</view> -->
+          <view class='num'>{{equipmentData.temperature}}</view><view class='danwei'>℃</view>          
+        </view>
+        <view class='temperatureIcon'>
+          当前温度
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='slider-wrap'>
+    <view class='wraps'>
+      <view class='btn' bindtap='jianValue'>
+        <image src='{{checkState?jianIcon:jianIcon2}}' mode="widthFix"></image>
+      </view>
+      <view class="body-view">
+        <slider bindchange="slider4change" disabled="{{bhSet||!checkState}}" activeColor="{{checkState?'#FFCE00':'#E7E7E7'}}" block-color='{{checkState?"#EB5123":"#E7E7E7"}}' block-size='24' backgroundColor="{{checkState?'#FC6B34':'#E7E7E7'}}" value="{{nowValue}}" min="{{minValue}}" bindchanging="bindchanging" max="{{maxValue}}" show-value="{{true}}"/>
+      </view>
+      <view class='btn' bindtap='addValue'>
+        <image src='{{checkState?addIcon1:addIcon2}}'  mode="widthFix"></image>
+      </view>
+    </view>
+    <view class='showWendu'>
+      <text class='left'>{{minValue}}℃</text>
+      <text class='right'>{{maxValue}}℃</text>
+    </view>
+  </view>
+
+  <view class='switch_menu'>
+    <view class='switch_mode'>
+      <view style='width:38rpx;height:38rpx;'></view>
+      <view class='{{checkState?"openMode":"mode"}} mode_wrap'>
+        <view class='hengwen btn left {{mode?"active":""}}' data-mode="1" bindtap='changeMode'>恒温模式</view>
+        <view class='sleep btn left {{!mode?"active":""}}' data-mode="2" bindtap='changeMode'>睡眠模式</view>
+      </view>
+      <view style='width:38rpx;height:38rpx;'></view>
+      <!-- <view class='setting' bindtap='goSetting'>
+        <image mode='widthFix' src='{{setting}}'></image>
+        <view class='setting_title'>
+          设置
+        </view>
+      </view> -->
+    </view>
+    <view class='switch_wrap'>
+      <view class='switch timing' bindtap='gotimingPage'>
+        <image class='switch_small btn' src='{{timingicon.icon1}}'></image>
+        <view class='switch_title'>
+          定时模式
+        </view>
+      </view>
+      <view class='switch gear' bindtap='goSetting'>
+        <image class='switch_small btn' src='{{setting_icon}}'></image>
+        <view class='switch_title'>
+          设置
+        </view>
+      </view>
+      <view class='switch bh' bindtap='gobhPage'>
+        <image class='switch_small btn' src='{{bhiconShow}}'></image>
+        <view class='switch_title'>
+          童锁设置
+        </view>
+      </view>
+      <view class='switch dink' bindtap='godinkPage'>
+        <image class='switch_small btn' src='{{dicon}}'></image>
+        <view class='switch_title'>
+          背光调节
+        </view>
+      </view>
+      <view class='swith' bindtap='openHandler'>
+        <!-- <image class='switch_big btn' src='{{checkState?openIcon:openIcon2}}'></image> -->
+        <image class='switch_big btn' src='{{openIcon}}'></image>
+      </view>
+
+    </view>
+  </view>
+
+  <view>
+      <i-action-sheet visible="{{ visible1 }}" actions="{{ actions1 }}" show-cancel bind:cancel="handleCancel1" bind:click="handleClickItem1" />
+  </view> 
+</view>

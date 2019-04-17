@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/equipment/equipmentList/equipmentList",
+    "pages/login/login",
+    "pages/equipment/timerMode/timerMode",
+    "pages/user/user/user",
+    "pages/user/question/questonList/questonList",
+    "pages/user/question/detail/detail",
+    "pages/user/personalData/personalData",
+    "pages/equipment/setting/firmware_upgrade/firmware_upgrade",
+    "pages/equipment/addTimer/addTimer",
+    "pages/equipment/index/index",
+    "pages/message/message",
+    "pages/equipment/setting/index/index",
+    "pages/equipment/setting/share_account/share_account",
+    "pages/user/feedback/feedback",
+    "pages/user/about/about",
+    "pages/user/user-setting/user-setting",
+    "pages/equipment/h5page/h5page"
+  ],
+  "window": {
+    "backgroundColor": "#f5f5f5",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/tab_icon_news_nro.png",
+        "selectedIconPath": "images/tab_icon_news_sel.png"
+      },
+      {
+        "pagePath": "pages/equipment/equipmentList/equipmentList",
+        "text": "设备",
+        "iconPath": "images/tab_equipment_nro.png",
+        "selectedIconPath": "images/tab_equipment_sel .png"
+      },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "我的",
+        "iconPath": "images/tab_icon_me_nro.png",
+        "selectedIconPath": "images/tab_icon_me_sel.png"
+      }
+    ],
+    "backgroundColor": "#ffffff",
+    "color": "#a3a3a8",
+    "borderStyle": "white",
+    "selectedColor": "#C81D01"
+  }
+}

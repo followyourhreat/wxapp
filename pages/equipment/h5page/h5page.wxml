@@ -1,0 +1,6 @@
+<!--pages/equipment/h5page/h5page.wxml-->
+ <view class="container">
+  <view class="pageH5">
+    <web-view src="http://zjlangsheng.cn"></web-view>
+  </view>
+  </view>

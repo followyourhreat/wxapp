@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor":"#C81D01",
+  "navigationBarTitleText":"设备",
+  "navigationBarTextStyle":"#ffffff",
+  "usingComponents": {
+    "i-action-sheet": "../../component/dist/action-sheet/index"
+  }
+}

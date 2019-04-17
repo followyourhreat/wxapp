@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "定时",
+  "usingComponents": {
+    "timerPicker": "../../component/timer/timer"
+  }
+  
+}

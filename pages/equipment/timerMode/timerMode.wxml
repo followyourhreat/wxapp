@@ -1,0 +1,28 @@
+<view class='timerMode'>
+  <view class='slideSroll' style="height:{{clientHeight}}px">
+    <scroll-view scroll-y style="height:{{clientHeight}}px" bindscrolltolower="lower">
+       <view id="slideitem-{{index}}" class='cell-class' row="{{index}}" itemColor="#fff" 
+      cellHeight="150rpx" wx:for="{{dataArray}}" wx:for-item="data" wx:key="{{index}}">
+      <view class='slider-wrapper'>
+        <view class='mode-content' data-row="{{data}}" bindtap='selectItme'>
+          <view class='title'>
+            <text class='startTi'>{{data.startTime}} 定时开</text><text class='endTi'>{{data.endTime}} 定时关</text>
+          </view>
+          <view class='timewrap'>
+            <!-- <text class='time'>{{data.time}}</text> -->
+            <text class='weekend'>{{data.weekDate}}</text>
+          </view>
+        </view>
+        <view class="body-view">
+          <switch checked="{{data.checked}}" color="#C81D01" data-item="{{data}}" bindchange="switch1Change" />
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  </view>
+
+  <!-- <view class='addTimeModeBtn'>
+    <button type="warn" bindtap="linktoAddTimePage"> 新增定时 </button>
+  </view> -->
+
+</view>

@@ -1,0 +1,32 @@
+/* pages/user/user-setting/user-setting.wxss */
+
+.user_setting {
+  width: 100%;
+}
+
+.user_setting .setting_title {
+  font-size: 28rpx;
+  color: #8a8a8a;
+  padding: 30rpx 36rpx
+}
+
+.user_setting .user_setting_cell{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18rpx;
+  background: #ffffff;
+  margin-bottom: 2rpx
+
+
+}
+
+.user_setting .user_setting_cell .cell_label{
+  font-size: 32rpx;
+  padding-left: 26rpx
+}
+.mess_cell{
+  margin-top: 20rpx
+}

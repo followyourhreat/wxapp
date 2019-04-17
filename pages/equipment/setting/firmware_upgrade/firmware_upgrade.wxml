@@ -1,0 +1,39 @@
+ <view class='upgrade_List card'>
+      <view class='cell'>
+         <view class='title'>
+            当前固件版本
+         </view>
+         <view class='versions'>
+            {{versions.nowVersions}}
+
+         </view>
+      </view>
+
+       <view class='cell'>
+         <view class='title'>
+           最新固件版本
+         </view>
+         <view class='versions'>
+            {{versions.newVersions}}<text wx:if="{{upgrade}}">(可更新)</text>
+         </view>
+      </view>
+    </view>
+
+    
+  <view class='upgrade_btn'>
+    <button type="warn" bindtap='upgrade'> 立刻升级 </button>
+  </view>
+
+  <view class='upgrade_modal' wx:if="{{showModal}}">
+      <view class='img'>
+        <image src='../../../../images/upgrade_img.png' mode='widthFix'></image>
+      </view>
+      <view class='upgrade_progress'>
+          <progress percent="20" show-info />
+      </view>
+      <view class='hintTitle'>
+         固件升级中...
+      </view>
+  </view>
+
+  <view class='upgrade_mask'  wx:if="{{showModal}}"></view>

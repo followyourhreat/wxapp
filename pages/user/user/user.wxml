@@ -1,0 +1,36 @@
+<view class="user_wrap">
+  <view class='user_head_wrap card' hover-class="user_active" bindtap='editInfo'>
+    <image class='head left' src='{{userData.image?userData.image:headImg}}' mode="widthFix"></image>
+    <view class='userName_wrap left'>
+        <view class='username'>
+          {{userData.nickname?userData.nickname:nickname}}
+        </view>
+        <!-- <view class='usertitle'>
+          {{userData.title}}
+        </view> -->
+    </view>
+    <image class='right jiantou' src='../../../images/List_icon_arrow.png' mode='widthFix'></image>
+  </view>
+  <view class='settingPage'>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url='{{item.url}}' class="weui-cell weui-cell_access" wx:for="{{settingList}}" data-setting="{{item.setting}}" data-url="{{item.url}}" hover-class="weui-cell_active" bindtap='navigatorTo'>
+        <view class="weui-cell__hd">
+          <image src="{{item.icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">{{item.title}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator >
+    </view>
+  </view>
+  <view style='margin-top:20rpx;'>
+     <view class="weui-cells weui-cells_after-title">
+      <navigator url='{{setting.url}}' class="weui-cell weui-cell_access"  data-url="{{setting.url}}" hover-class="weui-cell_active" bindtap='navigatorTo'>
+        <view class="weui-cell__hd">
+          <image src="{{setting.icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">{{setting.title}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator >
+    </view>
+  </view>
+</view>

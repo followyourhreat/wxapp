@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "定时",
+      "usingComponents": {
+        "slideitem": "../../component/leftSlide/leftSlide"
+      }
+}

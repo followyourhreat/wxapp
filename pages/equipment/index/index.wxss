@@ -1,0 +1,297 @@
+.headerWrap {
+  height: 340rpx;
+  /* background: #c81d01; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.header_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340rpx;
+  z-index: 10;
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 340rpx;
+  padding: 33rpx 50rpx;
+  box-sizing: border-box;
+  z-index: 11;
+}
+
+.weather-wrap {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 18rpx; */
+}
+
+.weather-wrap .xianIcon {
+  display: inline-block;
+  width: 2rpx;
+  height: 22rpx;
+  background: #fff;
+  margin: 0 10rpx;
+}
+
+.weather-wrap .h4 {
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.weather-wrap .h3 {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+}
+
+.weather .weatherIcon {
+  width: 36rpx;
+  height: 34rpx;
+  margin-right: 8rpx;
+}
+
+.state-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.state-wrap image {
+  float: left;
+  width: 28rpx;
+  height: 34rpx;
+}
+
+.state-wrap .h4 {
+  float: left;
+}
+
+.temperature-wrap {
+  width: 190rpx;
+  /* overflow: hidden; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.temperature-wrap .number {
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 20rpx
+}
+
+.temperature-wrap .number .num {
+  display: block;
+  font-family: 'D-DIN Condensed';
+  font-size: 140rpx;
+  line-height: 130rpx;
+  letter-spacing: 0;
+}
+
+.temperature-wrap .number .danwei {
+  font-family: 'D-DIN Condensed';
+  position: absolute;
+  font-size: 40rpx;
+  top: 4rpx;
+  right: -10rpx;
+}
+
+.temperature-wrap .temperatureIcon {
+  width: 160rpx;
+  height: 48rpx;
+  border: 2rpx solid #fff;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 44rpx;
+  color: #fff;
+  margin-top: 14rpx;
+  margin: 0 auto;
+}
+
+.slider-wrap {
+  width: 100%;
+  overflow: hidden;
+  height: 94rpx;
+  margin-top: 80rpx;
+}
+
+.slider-wrap .wraps {
+  width: 100%;
+  display: flex;
+  height: 58rpx;
+  padding: 0 33rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-wrap .btn {
+  width: 58rpx;
+  height: 58rpx;
+}
+
+.slider-wrap .btn image {
+  width: 100%;
+}
+
+.slider-wrap .body-view {
+  width: 520rpx;
+}
+
+.slider-wrap .showWendu {
+  width: 520rpx;
+  overflow: hidden;
+  padding: 0 18rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.slider-wrap .showWendu text {
+  color: #9b9b9b;
+  font-size: 22rpx;
+}
+
+.switch_menu {
+  width: 100%;
+  overflow: hidden;
+  border-top: 2rpx solid #d5d5d5;
+  max-height: 628rpx;
+  margin-top: 50rpx;
+  /* background: #f2f2f2; */
+}
+
+.switch_mode {
+  width: 100%;
+  height: 62rpx;
+  margin-top: 28rpx;
+  display: flex;
+  padding: 0 46rpx;
+  justify-content: space-between;
+}
+
+.switch_mode .mode_wrap {
+  width: 358rpx;
+  height: 62rpx;
+  background: #D2D2D2;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch_mode .openMode{
+  background: #fe7700;
+}
+ .switch_mode .mode_wrap .btn{
+     width: 175rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size: 22rpx;
+  text-align: center;
+  color: #fff;
+ }
+
+.switch_mode .openMode .btn.active {
+  background: #fff;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+  color: #fe7700;
+}
+.switch_mode .mode .hengwen{
+  background: #fff;
+  color: #D2D2D2
+}
+
+.switch_mode .setting {
+  /* overflow: hidden; */
+}
+
+.switch_mode .setting image {
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: top;
+  display: block;
+}
+
+.switch_mode .setting .setting_title {
+  color: #333;
+  font-size: 20rpx;
+  /* line-height: 25rpx */
+}
+
+.switch_wrap {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 536rpx;
+}
+
+.switch_wrap .switch {
+  width: 154rpx;
+  position: absolute;
+  overflow: hidden;
+}
+
+.switch_wrap .swith {
+  width: 274rpx;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch_wrap .switch .switch_small {
+  width: 154rpx;
+  height: 154rpx;
+  vertical-align: top;
+}
+
+.switch_wrap .swith .switch_big {
+  /* display: block; */
+  width: 274rpx;
+  height: 280rpx;
+}
+
+.switch_wrap .switch.timing {
+  top: 55rpx;
+  left: 87rpx;
+}
+
+.switch_wrap .switch.gear {
+  top: 55rpx;
+  right: 87rpx;
+}
+
+.switch_wrap .switch.bh {
+  bottom: 55rpx;
+  left: 87rpx;
+}
+
+.switch_wrap .switch.dink {
+  bottom: 55rpx;
+  right: 87rpx;
+}
+
+.switch_wrap .switch .switch_title {
+  font-size: 24rpx;
+  text-align: center;
+  color: #a1a1a1;
+}

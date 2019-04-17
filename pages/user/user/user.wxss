@@ -1,0 +1,49 @@
+/* pages/user/user/user.wxss */
+
+.user_wrap {
+}
+.user_active{
+  background: #f2f2f2
+}
+.user_wrap .user_head_wrap {
+  width: 100%;
+  height: 180rpx;
+  padding: 44rpx 26rpx 44rpx 34rpx;
+  margin-bottom: 20rpx;
+
+}
+
+.user_wrap .user_head_wrap .head {
+   width: 100rpx;
+  height: 100rpx;
+  border-radius:100%;
+  overflow:hidden;
+  margin-right: 30rpx
+}
+.user_wrap .user_head_wrap .jiantou{
+  width:35rpx;
+  height:38rpx;
+  margin-top: 32rpx
+}
+.userName_wrap {
+  height: 100rpx;
+  display: flex;
+  align-items: center
+}
+
+.userName_wrap .username {
+  font-size: 36rpx;
+  color: #333333;
+  /* line-height: 50rpx; */
+  /* margin-bottom: 10rpx */
+}
+
+.userName_wrap .usertitle {
+  font-size: 28rpx;
+  color: #c1c1c1;
+  
+}
+
+.user_wrap .weui-cell {
+  padding: 28rpx 30rpx;
+}

@@ -1,0 +1,35 @@
+<view class='addTimePage'>
+  <view class='timePickerWrap card'>
+  <text class='timeTitle'>定时开机</text>
+    <timerPicker bind:_bindChange="bindChange" />
+  </view>
+
+   <view class='timePickerWrap card'>
+  <text class='timeTitle'>定时关机</text>
+   
+    <timerPicker bind:_bindChange="bindChange2" />
+  </view>
+  <!-- <view class='card week_wrap'>
+    <view class='week_title'>
+      是否重复
+    </view>
+    <view class='week_check'>
+      <view wx:for="{{weekList}}" class="{{selectIndex[index].sureid?'active':' '}} left item" data-idx="{{index}}" bindtap='chooseItem'>
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <view class='switch_timer card'>
+    <view class="timeBtn {{showActive?'active':''}}" data-item="1" bindtap='changeSwitch'>
+      <image src='{{switchIcon1}}' mode='widthFix'></image>
+      开启设备
+    </view>
+    <view class='xian'></view>
+    <view class="timeBtn {{showActive2?'active':''}}" data-item="2" bindtap='changeSwitch'>
+      <image src='{{switchIcon2}}' mode='widthFix'></image>
+      关闭设备</view>
+  </view> -->
+  <view class='addTimeBtn' bindtap='submitTime'>
+    <button type="warn"> 保存 </button>
+  </view>
+</view>

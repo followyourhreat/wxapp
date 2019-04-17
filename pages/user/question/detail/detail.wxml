@@ -1,0 +1,12 @@
+<view class='detail_wrap'>
+  <view class='detail_title'>
+     {{question.title}}
+  </view>
+  <view class='detail_content'>
+  <text>{{question.content}}</text>
+      
+  </view> 
+  <view>
+      <image src='{{question.image}}' style='width:100%' mode='widthFix'></image>  
+  </view>
+</view>

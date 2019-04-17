@@ -1,0 +1,32 @@
+<view class="user_setting">
+  <view class='setting_title'>
+    在此处，你可以设置按键反馈类型
+  </view>
+  <!-- <view class='user_setting_cell'>
+    <view class='cell_label'>
+      声音
+    </view>
+    <view class="body-view">
+      <switch checked="{{checked1}}" data-row="{{data}}" color="#C81D01" bindchange="switch1Change" />
+    </view>
+  </view>
+  <view class='user_setting_cell'>
+    <view class='cell_label'>
+      震动
+    </view>
+    <view class="body-view">
+      <switch checked="{{checked2}}" data-row="{{data}}" color="#C81D01" bindchange="switch1Change2" />
+    </view>
+  </view> -->
+  <view class='mess_cell'>
+    <view class='user_setting_cell'>
+      <view class='cell_label'>
+        接受消息推送
+      </view>
+      <view class="body-view">
+        <switch checked="{{checked3}}" data-row="{{data}}" color="#C81D01" bindchange="switch1Change" />
+      </view>
+    </view>
+  </view>
+
+</view>

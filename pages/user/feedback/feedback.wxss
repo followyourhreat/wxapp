@@ -1,0 +1,32 @@
+/* pages/user/feedback/feedback.wxss */
+
+.feedback {
+  width: 100%;
+}
+
+.feedback .h4 {
+  font-size: 24rpx;
+  color: #7a7a7a;
+  padding: 24rpx 30rpx;
+}
+
+.feedback .section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.feedback .section textarea {
+  width: 100%;
+  height: 280rpx;
+  padding: 18rpx 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 100rpx;
+}
+
+.addTimeBtn {
+  width: 560rpx;
+  margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+<!--pages/component/timer/timer.wxml-->
+<view class='timeWrap'>
+  <picker-view indicator-class="indicator-style" class='picker_view_wrapper' value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{timeList}}" class='picker-view-txt'>{{item}}</view>
+    </picker-view-column>
+    <!-- <picker-view-column>
+    :
+    </picker-view-column> -->
+    <picker-view-column>
+      <view wx:for="{{timeList2}}" class='picker-view-txt'>{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <view class='maohao'>:</view>
+</view>

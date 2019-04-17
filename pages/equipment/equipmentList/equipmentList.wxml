@@ -1,0 +1,59 @@
+<view class='wrapper'>
+  <view class='weiper_wrapper'>
+    <swiper indicator-dots="{{indicatorDots}}" class='swiper_indica' circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{bannerList}}" wx:key="{{index}}">
+        <swiper-item>
+         <!-- <navigator url="./../h5page/h5page" class="papaa"> -->
+          <image src="{{item}}" class="slide-image"  />
+         <!-- </navigator> -->
+         
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 
+itemColor: cell背景色
+deleteItemEvent:绑定删除事件
+slideItemEvent:绑定左滑动打开
+cellHeight:cell高度 
+-->
+  <slideitem 
+  id="slideitem-{{index}}" 
+  class='cell-class' 
+  row="{{index}}" 
+  itemColor="#fff" 
+  bind:deleteItemEvent='deleteAction' 
+  bind:renameEvent='renameEvent' 
+  bind:slideItemEvent='slideAction' 
+  bind:selectItemEvent='selectCellAction' 
+  cellHeight="150rpx" 
+  wx:for="{{dataArray}}"
+  data-row="{{data}}"
+  wx:for-item="data"
+  wx:key="{{index}}">
+    <view class='slider-wrapper'>
+      <view class='slider-icon'>
+        <image src='../../../images/equipment_icon_heater.png' mode="widthFix" />
+      </view>
+      <view class='slider-content' bindtap='linkToIndex' data-row="{{data}}">
+        <view class='topText'>
+          <text class='titles'>{{data.name}}</text>
+          <image class='stateIcon_b' wx:if="{{data.status == '0'}}" src='{{offLine}}'></image>
+          <!-- <image wx:else class='stateIcon_b' src='{{data.checkState == "1"?stateIcon:stateIcon2}}'></image> -->
+          <!-- <image wx:else class='stateIcon_b' src='{{data.checkState?stateIcon:stateIcon2}}'></image>-->
+          <image wx:else class='stateIcon_b' src='{{data.heating?stateIcon:stateIcon2}}'></image>
+        </view>
+        <view class='bottomText'>当前温度：{{data.temperature}}</view>
+      </view>
+      <view class="body-view">
+        <switch disabled="{{data.status == '0'}}" checked="{{data.checkState}}" data-row="{{data}}" color="#C81D01" bindchange="switch1Change" />
+      </view>
+    </view>
+  </slideitem>
+  <modal hidden="{{hiddenmodalput}}" title="请输入设备名称" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text' placeholder="请输入内容" bindinput='getInput' value='{{rename}}' auto-focus/>
+  </modal>
+
+  <!-- <button open-type="getUserInfo" bindtap='getInfo'>获取用户信息</button> -->
+</view>

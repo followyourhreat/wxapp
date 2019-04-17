@@ -1,0 +1,10 @@
+<view class="about_wrap card" style="height:{{clientHeight}}px" >
+      <scroll-view 
+    scroll-y 
+    style="height:{{clientHeight}}px" 
+    bindscrolltolower="lower">
+   
+    {{content}}
+
+    </scroll-view>
+</view>

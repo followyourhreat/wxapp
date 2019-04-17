@@ -1,0 +1,51 @@
+<view class='message_wrap card' >
+  <view class='slideSroll' style="height:{{clientHeight}}px">
+    <scroll-view 
+    scroll-y 
+    style="height:{{clientHeight}}px" 
+    bindscrolltolower="lower">
+      <slideitem 
+        id="slideitem-{{index}}" 
+        class='cell-class' 
+        row="{{index}}" 
+        itemColor="#fff" 
+        bind:deleteItemEvent='deleteAction' 
+        showRename="{{false}}" 
+        bind:renameEvent='renameEvent' 
+        bind:slideItemEvent='slideAction' 
+        bind:selectItemEvent='selectCellAction'
+        cellHeight="200rpx" 
+        wx:for="{{dataArray}}" 
+        wx:for-item="data" 
+        wx:key="{{index}}">
+        <view class='spot' wx:if="{{data.showspot}}">
+        </view>
+        <view class='message_cell'>
+            <view class='mess_title_wrap'>
+                <view class='mess_title'>
+                  {{data.title}}
+                </view>
+                <view class='mess_time'>
+                  {{data.time}}
+                </view>
+            </view>
+            <view class='mess_content' bindtap="handleRouter">{{data.content}}</view>
+        </view>
+      </slideitem>
+      <!-- <view class="cell-class" wx:for="{{dataArray}}" wx:for-item="data" wx:key="{{index}}">
+        <view class='message_cell' style="background: #fff" bindtap="handleRouter">
+          <view class='mess_title_wrap'>
+              <view class='mess_title'>
+                {{data.title}}
+              </view>
+              <view class='mess_time'>
+                {{data.time}}
+              </view>
+          </view>
+          <view class='mess_content'>{{data.content}}</view>
+        </view>
+      </view> -->
+    </scroll-view>
+  </view>
+
+</view>

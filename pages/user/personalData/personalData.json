@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人资料",
+  "usingComponents": {
+    "i-cell-group": "../../component/dist/cell-group/index",
+    "i-cell": "../../component/dist/cell/index",
+    "i-action-sheet": "../../component/dist/action-sheet/index"
+  }
+}

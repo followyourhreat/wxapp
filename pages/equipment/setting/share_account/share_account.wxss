@@ -1,0 +1,116 @@
+/* pages/equipment/setting/share_account/share_account.wxss */
+
+.share_wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding-bottom: 44rpx;
+}
+
+.share_wrapper .share_top {
+  height: 358rpx;
+  padding: 73rpx 0 46rpx 0;
+  display: flex;
+  justify-content: center;
+}
+
+.share_wrapper .share_top image {
+  width: 324rpx;
+}
+
+.share_form {
+}
+
+.share_form .section {
+  width: 628rpx;
+  height: 62rpx;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2rpx solid #e6e9eb;
+}
+
+.share_form .section input {
+  font-size: 28rpx;
+  width: 100%;
+  height: 62rpx;
+  color: #969fa9;
+}
+
+.share_form .share_btn {
+  background: #c81d01;
+  border-radius: 100px;
+  width: 560rpx;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+
+.share_form .share_content {
+  width: 100%;
+  padding: 0 46rpx;
+  margin-top: 50rpx;
+}
+
+.share_form .share_content view {
+  font-size: 28rpx;
+  color: #c1c1c1;
+  line-height: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.share_user_wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.share_user_wrapper .title {
+  font-size: 28rpx;
+  color: #8a8a8a;
+  padding: 29rpx 36rpx;
+}
+
+.share_user_wrapper .user_List {
+  width: 100%;
+  overflow: hidden;
+}
+
+.share_user_wrapper .user_List .user_cell {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+    background: #ffffff;
+  align-items: center;
+  margin-bottom: 2rpx;
+  justify-content: space-between;
+  padding: 0 44rpx
+}
+
+.user_List .user_cell .phone {
+  font-size: 32rpx;
+  color: #011111;
+}
+.user_List .user_cell .icon_wrap{
+  width: 144rpx;
+  display: flex;
+  justify-content: center;
+  height: 60rpx;
+}
+.user_List .user_cell .icon_wrap image{
+  float: left
+}
+.user_List .user_cell .admin_icon{
+  height: 50rpx
+}
+.user_List .user_cell .admin_icon image {
+  width: 144rpx;
+  /* height: 49rpx */
+}
+
+.user_List .user_cell .removeIcon image {
+  width: 100rpx;
+  height: 60rpx;
+  margin: 0 auto
+}

@@ -1,0 +1,26 @@
+/* pages/user/question/detail/detail.wxss */
+.detail_wrap{
+  margin-top: 10rpx
+}
+.detail_title {
+  font-size: 42rpx;
+  color: #333;
+  font-weight: 600;
+  padding: 28rpx 42rpx;
+  margin-bottom: 2rpx;
+  background:#ffffff
+}
+
+.detail_content {
+  font-size: 32rpx;
+  color: #999;
+    padding: 28rpx 42rpx;
+  background:#ffffff
+  
+}
+.detail_content text{
+  white-space:pre-wrap;
+  color: #333;
+  font-size: 36rpx;
+  
+}

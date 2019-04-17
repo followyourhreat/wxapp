@@ -1,0 +1,10 @@
+/* pages/equipment/setting/index/index.wxss */
+.settingPage .weui-cell{
+  padding: 36rpx 50rpx
+}
+
+.noNavigator{
+  width: 100%;
+  height: 100%;
+  position: absolute
+}

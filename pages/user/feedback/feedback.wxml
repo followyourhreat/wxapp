@@ -1,0 +1,13 @@
+<view class='feedback'>
+  <view class='h4'>
+    简单描述您的意见
+  </view>
+
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea name="textarea" value='{{textAreaValue}}'/>
+      <button class='addTimeBtn' form-type="submit" type="warn"> 立刻反馈 </button>
+    </form>
+  </view>
+
+</view>

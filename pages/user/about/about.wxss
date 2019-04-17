@@ -1,0 +1,7 @@
+/* pages/user/about/about.wxss */
+.about_wrap{
+  padding: 40rpx 34rpx;
+  font-size: 34rpx;
+  color: #333333;
+}
+

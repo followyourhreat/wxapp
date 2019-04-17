@@ -1,0 +1,48 @@
+<view class='personal_wrap'>
+
+  <!-- <view class='info_head_wrap info_list'>
+    <i-cell-group>
+      <i-cell title="头像" value="右侧内容" is-link></i-cell>
+    </i-cell-group>
+  </view> -->
+  <view class='user_head_wrap card' hover-class="user_active" bindtap='editInfo'>
+    <view class='tit'>
+      头像
+    </view>
+    <image class='my_head' src='{{user.image?user.image:headImg}}' mode="cover"></image>
+    <!-- <image class='jiantou' src='../../../images/List_icon_arrow.png' mode='widthFix'></image> -->
+  </view>
+  <view class=' info_list'>
+    <i-cell-group i-class="info_cell" bindtap="editnickName">
+      <i-cell title="昵称" value="{{user.nickname?user.nickname:nickname}}" is-link></i-cell>
+    </i-cell-group>
+    <i-cell-group i-class="info_cell" bindtap="editSex">
+      <i-cell title="性别" value="{{user.sex == '1'?'男':'女'}}" is-link>
+      </i-cell>
+    </i-cell-group>
+    <!-- 日期选择 -->
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <i-cell-group i-class="info_cell" bindtap="editAge">
+        <i-cell title="年龄" value="{{age}}" is-link></i-cell>
+      </i-cell-group>
+    </picker>
+
+  </view>
+  <view class='info_list'>
+    <i-cell-group i-class="info_cell">
+      <i-cell title="用户ID" value="{{user.uid}}"></i-cell>
+    </i-cell-group>
+  </view>
+
+  <view>
+    <i-action-sheet visible="{{ visible1 }}" actions="{{ actions1 }}" show-cancel bind:cancel="handleCancel1" bind:click="handleClickItem1" />
+  </view>
+
+  <modal wx:if="{{hiddenmodalput}}" title="请输入昵称" confirm-text="提交" cancel-text="取消" bindcancel="cancel" data-nickname="{{nickValue}}" bindconfirm="confirm">
+    <input type='text' placeholder="请输入内容" bindinput="nikeValue_blur" auto-focus/>
+  </modal>
+<!-- 
+  <modal wx:if="{{hiddenmodalput2}}" title="请输入昵称" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text' placeholder="请输入内容" auto-focus/>
+  </modal> -->
+</view>
